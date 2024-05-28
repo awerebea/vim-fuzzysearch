@@ -1,10 +1,10 @@
 
-let g:fuzzysearch_prompt='fuzzy /'
-let g:fuzzysearch_hlsearch=1
-let g:fuzzysearch_ignorecase=1
-let g:fuzzysearch_max_history = 30
-let g:fuzzysearch_match_spaces = 0
-let g:fuzzysearch_sensitivity = 0
+if !exists("g:fuzzysearch_prompt") | let g:fuzzysearch_prompt='fuzzy /' | endif
+if !exists("g:fuzzysearch_hlsearch") | let g:fuzzysearch_hlsearch=1 | endif
+if !exists("g:fuzzysearch_ignorecase") | let g:fuzzysearch_ignorecase=1 | endif
+if !exists("g:fuzzysearch_max_history") | let g:fuzzysearch_max_history = 30 | endif
+if !exists("g:fuzzysearch_match_spaces") | let g:fuzzysearch_match_spaces = 0 | endif
+if !exists("g:fuzzysearch_sensitivity") | let g:fuzzysearch_sensitivity = 0 | endif
 
 function! s:getSearchHistory()
   return filter(map(range(1, 20), 'histget("/", v:val-20)'), '!empty(v:val)')
