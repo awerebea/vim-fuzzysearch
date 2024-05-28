@@ -29,6 +29,6 @@ I find it very useful to create a fuzzy search quickly, then replace all instanc
 `g:fuzzysearch_hlsearch = 1` +
 `g:fuzzysearch_ignorecase = 1` +
 `g:fuzzysearch_max_history = 30` +
-`g:fuzzysearch_match_spaces = 0`
+`g:fuzzysearch_match_spaces = 0` +
 `g:fuzzysearch_sensitivity = 0`
 
